@@ -4,7 +4,7 @@ set -e
 
 # we deploy only qmake and gcc combination for linux
 if [ "${Q_OR_C_MAKE}" = "qmake" ] && [ "${CC}" = "gcc" ]; then
-  git clone --branchAddGstreamerPlugins https://github.com/keneanung/mudlet-installers.git "${TRAVIS_BUILD_DIR}/../installers"
+  git clone --branch=AddGstreamerPlugins https://github.com/keneanung/mudlet-installers.git "${TRAVIS_BUILD_DIR}/../installers"
 
   cd "${TRAVIS_BUILD_DIR}/../installers/generic-linux"
 
